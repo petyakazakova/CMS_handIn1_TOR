@@ -1,0 +1,32 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:Label SkinId="LabelMainHeadline" runat="server" ForeColor="#284994" Font-Size="27pt"/>
+<asp:Label SkinId="LabelMainCategory" runat="server" ForeColor="black" Font-Size="14pt" />
+<asp:Label SkinId="LabelMainDesc" runat="server" ForeColor="black" Font-Size="12pt"/>
+
+
+<asp:Label SkinId="LabelSecHeadline" runat="server" ForeColor="#8684b7" Font-Size="19pt" />
+<asp:Label SkinId="LabelSecCategory" runat="server" ForeColor="black" Font-Size="14pt"  />
+<asp:Label SkinId="LabelSecDesc" runat="server" ForeColor="black" Font-Size="12pt" />
+
+<asp:Label SkinId="LabelJokes" runat="server" ForeColor="black" Font-Size="14pt" />
+<asp:Label SkinId="LabelCaption" runat="server" ForeColor="#e54b69" Font-Size="19pt" />
+
+
+<asp:Label SkinId="LabelFooter" runat="server" ForeColor="purple" Font-Size="16pt" />
+
+<asp:button runat="server" Borderstyle="Solid" Borderwidth="2px" Bordercolor="Blue" Backcolor="yellow"/>

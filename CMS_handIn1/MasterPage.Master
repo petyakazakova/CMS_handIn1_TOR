@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="CMS_handIn1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Magic tricks</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="~/App_Themes/stylesMaster.css" type="text/css" rel="stylesheet"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+            <!-- HEADER -->            
+            <div class="header">
+                <div id="companyName" >
+                    <asp:Image ID="ImageLogo" runat="server" style="width: 100px;"/>
+                    <div class="displayFlex">
+                    <asp:Label ID="LabelCompName" runat="server" Text=""></asp:Label>
+                    <asp:Label ID="LabelAuthor" runat="server" CssClass="auth" ></asp:Label>
+                    <asp:Label ID="LabelMessage" runat="server" Text=""></asp:Label>
+                    </div>
+                </div>
+            
+                <%-- Navigate between child pages --%>
+                <div class="myMenuBar">
+                    <asp:Menu ID="navigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Index.aspx" Text="Home"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Editor.aspx" Text="Admin"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Select.aspx" Text="Selection page"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Upload.aspx" Text="Upload page"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </div>
+            </div>
+        <!-- MAIN ITEM -->
+        <div id="mainItem">
+            <br /> <br /> 
+            <div id="mainCategory">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="mainHeadline">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="mainPicture">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="mainDesc">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <!-- SECOND ITEM -->
+        <div id="secondItem">
+            <div id="secCategory">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="secHeadline">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder6" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="secPicture">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder7" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="secDesc">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder8" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <!-- THIRD ITEM -->
+        <div id="thirdItem">
+            <div id="thirdCategory">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder9" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="thirdHeadline">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder10" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+             <div id="thirdPicture">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder11" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+             <div id="thirdDesc">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder12" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <!-- JOKE -->
+        <div id="joke">
+             <div id="jokeHeadline">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder13" runat="server">
+                </asp:ContentPlaceHolder>
+             </div>
+             <div id="jokePicture">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder14" runat="server">
+                </asp:ContentPlaceHolder>
+             </div>
+        </div>
+        <!-- FOOTER -->
+        <div>
+            <asp:ContentPlaceHolder ID="footer" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>            
+    </form>
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿body {
+    font-family: 'Ubuntu', Verdana, sans-serif;
+}
+
+.displayFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #f2f2f2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#companyName {
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#companyName img {
+    margin: 10px;
+}
+
+#companyName #LabelCompName {
+    font-size: 31px;
+    color: #ff7058;
+    margin: 9px 0px;
+}
+
+.myMenuBar {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu a, .menu ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0 20px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.LabelMainCategory, .LabelMainHeadline, .LabelSecCategory, .LabelSecHeadline {
+    text-transform: uppercase;
+}
+
+
+.mytable {
+    background: #f2f2f2;
+    padding: 10px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.mainTable {
+    background: #bdc8dd;
+    padding: 10px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.mytable img, .mainTable img {
+    padding: 20px;
+}
+
+.tableJoke {
+    background: #ffeff2;
+
+}
